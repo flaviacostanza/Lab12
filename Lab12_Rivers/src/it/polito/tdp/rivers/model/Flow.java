@@ -5,12 +5,12 @@ import java.time.LocalDate;
 public class Flow {
 	private LocalDate day;
 	private double flow;
-	private River river;
+//	private River river;
 
-	public Flow(LocalDate day, double flow, River river) {
+	public Flow(LocalDate day, double flow) {
 		this.day = day;
 		this.flow = flow;
-		this.river = river;
+		//this.river = river;
 	}
 
 	public LocalDate getDay() {
@@ -29,10 +29,6 @@ public class Flow {
 		this.flow = flow;
 	}
 
-	@Override
-	public String toString() {
-		return "Flow [day=" + day + ", flow=" + flow + ", river=" + river + "]";
-	}
 
 	
 }
